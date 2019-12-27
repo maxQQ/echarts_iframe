@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="layui/css/layui.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/echarts.min.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<div class="main_loading">
+		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="30px" viewBox="0 0 24 30" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+			<rect x="0" y="7.17256" width="4" height="16.6549" fill="#333">
+				<animate attributeName="height" attributeType="XML" values="5;21;5" begin="0s" dur="0.6s" repeatCount="indefinite"></animate>
+				<animate attributeName="y" attributeType="XML" values="13; 5; 13" begin="0s" dur="0.6s" repeatCount="indefinite"></animate>
+			</rect>
+			<rect x="10" y="6.82744" width="4" height="17.3451" fill="#333">
+				<animate attributeName="height" attributeType="XML" values="5;21;5" begin="0.15s" dur="0.6s" repeatCount="indefinite"></animate>
+				<animate attributeName="y" attributeType="XML" values="13; 5; 13" begin="0.15s" dur="0.6s" repeatCount="indefinite"></animate>
+			</rect>
+			<rect x="20" y="10.8274" width="4" height="9.34512" fill="#333">
+				<animate attributeName="height" attributeType="XML" values="5;21;5" begin="0.3s" dur="0.6s" repeatCount="indefinite"></animate>
+				<animate attributeName="y" attributeType="XML" values="13; 5; 13" begin="0.3s" dur="0.6s" repeatCount="indefinite"></animate>
+			</rect>
+		</svg>
+	</div>
+	<div class="main">
+		<div class="main_wrap">
+			<div class="dislog_wrap layui-form" id="content_out" hidden="hidden">
+				<div class="dialog_delet_1">
+					<h3>操作提示</h3>
+					<p>您确定要退出系统吗？</p>
+				</div>
+			</div>
+			<div id="nav_left">
+				<div class="logo"><img src="img/logo_1.png" alt="">康康数据</div>
+				<ul>
+					<li class="l_1 on">
+						<a href="views/index.html">
+							<span>数据概况</span>
+						</a>
+					</li>
+					<li class="l_2">
+						<a href="javascript:;">
+							<span>系统管理</span>
+						</a>
+						<dl>
+							<dd><a href="views/角色管理.html">角色管理</a></dd>
+							<dd><a href="views/权限管理.html">权限管理</a></dd>
+							<dd><a href="views/账号管理.html">账号管理</a></dd>
+						</dl>
+					</li>
+					<li class="l_3">
+						<a href="javascript:;">
+							<span>订单分析</span>
+						</a>
+						<dl>
+							<dd><a href="views/整体趋势.html">整体趋势</a></dd>
+							<dd><a href="views/实时统计.html">实时统计</a></dd>
+						</dl>					
+					</li>
+				</ul>
+			</div>
+			<div id="content_right">
+				<div class="right_tab clearfix">
+					<ul class="right_tabul clearfix">
+						<li><a href="javascript:;">数据概况</a></li>
+					</ul>
+					<div class="right_tool">
+						<div class="time">2019年12月20日  10:54:20</div>
+						<div class="user">
+							<dl>
+								<dt>欢迎光临,</dt>
+								<dd>MOMO.ZXY</dd>
+							</dl>
+							<div class="a01">
+								<div class="b01">
+									<img src="img/man.png" alt=""><i></i>
+									<div class="hiddiv">
+										<div>
+											<a href="views/个人中心.html"><img src="img/u_1.png" alt="">个人中心</a>
+											<a href="javascript:;" onclick="out()"><img src="img/u_2.png" alt="">退出登录</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="temwrap">
+					<div class="item">
+						<iframe src="" name="ifd" onload="this.height=ifd.document.body.scrollHeight;" width="100%" scrolling="no" frameborder="0"></iframe>
+					</div>
+				</div>
+			</div>
+			<div id="footer">copyright ©  2019 康康体检网技术部出品</div>
+		</div>
+	</div>
+</body>
+<script src="layui/layui.all.js"></script>
+<script>
+	var $ = layui.jquery
+	var form = layui.form
+	var layer = layui.layer	
+	function out() {
+		parent.layer.open({
+			type: 1,
+			title: '',
+			closeBtn : 0,
+			skin: 'dialog_class',
+			area: ['416px','auto'],
+			btn: ['取消','确定'],
+			btn1: function(index,layero) {//点击取消按钮
+				layer.close(index);
+			},
+			btn2: function(index,layero) {//点击保存按钮
+				return false;
+			},
+			content: $('#content_out')
+		});
+	}
+	$(function() {
+		$('.main_loading').show()
+		$('iframe').attr('src','views/index.html')
+		$('iframe').load(function() {
+			console.log('加载完成')
+			$('.main_loading').hide()
+		})
+	})	
+</script>
+</html>

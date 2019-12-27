@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="../layui/css/layui.css">
+	<link rel="stylesheet" href="../css/main.css">
+</head>
+<style>
+	html,body {
+		height: 100%;
+	}
+</style>
+<body class="login_page">
+	<div class="box layui-form">
+		<div class="b1"><img src="../img/1.png" alt=""></div>
+		<div class="b2">
+			<h4>账号登录</h4>
+			<div class="form_wrap">
+				<div class="form_line"><input type="text" placeholder="请输入账号"></div>
+				<div class="form_line"><input type="password" placeholder="密码"></div>
+			</div>
+			<div class="login_msg">账号或密码错误</div>
+			<div class="remember_pwd"><input type="checkbox" lay-skin="primary" title="记住密码"></div>
+			<div id="login_sub">登录</div>
+			<p>copyright ©2019  康康体检网技术部出品</p>
+		</div>
+	</div>
+</body>
+<script src="../js/jquery.js"></script>
+<script src="../layui/layui.all.js"></script>
+<script>
+	var form = layui.form;
+	$(function() {
+		$('#login_sub').click(function() {
+			$('.login_msg').show()
+		})
+	})
+</script>
+</html>

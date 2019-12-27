@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../layui/css/layui.css">
+	<link rel="stylesheet" href="../css/main.css">
+</head>
+<div class="htmlwrap htmlwrap1">
+	<div class="dislog_wrap layui-form" id="content1">
+		<div class="layui-tab layui-tab-brief">
+			 <ul class="layui-tab-title">
+				<li class="layui-this">菜单权限</li>
+				<li>数据权限</li>
+			</ul>
+			<div class="layui-tab-content">
+				<div class="layui-tab-item layui-show">
+					<table class="layui-table" lay-size="lg">
+						<thead>
+							<tr>
+								<th style="width: 130px;">一级菜单</th>
+								<th>二级菜单</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<div class="layui-input-inline">
+										<input type="checkbox" lay-skin="primary" title="比较">
+									</div>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<div class="layui-input-inline">
+										<input type="checkbox" lay-skin="primary" title="比较">
+									</div>
+								</td>
+								<td>
+									<div class="layui-input-inline">
+										<input type="checkbox" lay-skin="primary" title="比较">
+									</div>
+									<div class="layui-input-inline">
+										<input type="checkbox" lay-skin="primary" title="比较">
+									</div>
+									<div class="layui-input-inline">
+										<input type="checkbox" lay-skin="primary" title="比较">
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="layui-tab-item">
+					<table class="layui-table" lay-size="lg">
+						<thead>
+							<tr>
+								<th style="width: 130px;">一级菜单</th>
+								<th>二级菜单</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<div class="layui-input-inline">
+										<input type="checkbox" lay-skin="primary" title="比较">
+									</div>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<div class="layui-input-inline">
+										<input type="checkbox" lay-skin="primary" title="比较">
+									</div>
+								</td>
+								<td>
+									<div class="layui-input-inline">
+										<input type="checkbox" lay-skin="primary" title="比较">
+									</div>
+									<div class="layui-input-inline">
+										<input type="checkbox" lay-skin="primary" title="比较">
+									</div>
+									<div class="layui-input-inline">
+										<input type="checkbox" lay-skin="primary" title="比较">
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>		
+			</div>
+		</div>
+	</div>
+</div>
+<body class="iframe_body">
+	<div class="frame_content">
+		<div>
+			<div class="topbar_group_1">
+				<div class="bar_inline_1" style="margin: 0;">
+					<label>角色名称：</label>
+					<input type="text" placeholder="请输入">
+				</div>
+				<span class="search_btn_1" style="margin: 0 16px 0 20px;">搜索</span>
+			</div>
+			<div class="tab_wrap tab_wrap_com tab_wrap_4">
+				<div class="hd">
+					<ul>
+						<li>ID</li>
+						<li>角色名</li>
+						<li>描述</li>
+						<li>操作</li>
+					</ul>
+				</div>
+				<div class="bd">
+					<ul>
+						<li>
+							<span>1</span>
+							<span>管理员</span>
+							<span>系统管理员</span>
+							<span><em class="table_cz">编辑</em></span>
+						</li>
+						<li>
+							<span>1</span>
+							<span>管理员</span>
+							<span>系统管理员</span>
+							<span><em class="table_cz">编辑</em></span>
+						</li>
+						<li>
+							<span>1</span>
+							<span>管理员</span>
+							<span>系统管理员</span>
+							<span><em class="table_cz">编辑</em></span>
+						</li>
+						<li>
+							<span>1</span>
+							<span>管理员</span>
+							<span>系统管理员</span>
+							<span><em class="table_cz">编辑</em></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="page_1">
+				<a href="" class="prev"></a>
+				<a href="">1</a>
+				<a href="" class="active">2</a>
+				<a href="">3</a>
+				<a href="" class="next"></a>
+				<div class="page_bar">
+					<div class="hd">10条每页</div>
+					<ul class="bd">
+						<li>5条</li>
+						<li class="on">10条</li>
+						<li>20条</li>
+						<li>50条</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="../js/jquery.js"></script>
+<script src="../layui/layui.all.js"></script>
+<script>
+	var $ = layui.jquery
+	var form = layui.form
+	$(function() {
+		var _html1 = $('.htmlwrap1').html()
+		$('.table_cz').click(function() {
+			parent.layer.open({
+				type: 1,
+				title: '',
+				closeBtn : 2,
+				skin: 'dialog_class',
+				area: ['1034px','auto'],
+				btn: ['取消','保存'],
+				btn1: function(index,layero) {//点击取消按钮
+					layer.close(index);
+				},
+				btn2: function(index,layero) {//点击保存按钮
+					
+				},
+				content: _html1,
+				success: function(layero,index) {
+					parent.form.render();
+				}
+			});
+		})
+	})
+</script>
+</html>

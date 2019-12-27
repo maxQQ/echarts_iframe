@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="../layui/css/layui.css">
+	<link rel="stylesheet" href="../css/main.css">
+</head>
+<div class="htmlwrap htmlpwd">
+	<div class="dislog_wrap layui-form" id="content_pwd">
+		<div class="dialog_edit_1">
+			<h3>密码修改</h3>
+			<div class="edit_form" style="height: 220px;">
+				<div class="error_wrap_1">
+					<p>您输入的手机号有误</p>
+				</div>
+				<div class="form_line" style="padding-top: 30px;">
+					<label>原密码：</label>
+					<div class="input_box">
+						<input type="text" placeholder="请输原密码">
+					</div>
+				</div>
+				<div class="form_line">
+					<label>新密码：</label>
+					<div class="input_box">
+						<input type="text" placeholder="请输入新密码">
+					</div>
+				</div>
+				<div class="form_line">
+					<label>确认密码：</label>
+					<div class="input_box">
+						<input type="text" placeholder="请输入新密码">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<body>
+	<body class="iframe_body">
+		<div class="frame_content">
+			<div class="tBox_wrap clearfix">
+				<div class="tpace20">
+					<div class="twid twid40">
+						<div class="tBox tBox_grzx">
+							<div class="title">管理员信息</div>
+							<div class="user_info_1">
+								<ul>
+									<li>
+										<label>用户名：</label>
+										<p>淡淡的admin</p>
+									</li>
+									<li>
+										<label>电话：</label>
+										<p>18594200012</p>
+									</li>
+									<li>
+										<label>邮箱：</label>
+										<p>18594200012@qq.com</p>
+									</li>
+									<li>
+										<label>权限：</label>
+										<p>普通管理员</p>
+									</li>
+									<li>
+										<label>注册时间：</label>
+										<p>2019-08-24</p>
+									</li>
+								</ul>
+							</div>
+							<span class="change_pwd_btn" onclick="changepwd()">修改密码</span>
+						</div>
+					</div>
+					<div class="twid twid60">
+						<div class="tBox tBox_grzx">
+							<div class="title">管理员登记记录</div>
+							<div class="nodata_1">
+								<img src="../img/no_1.png" alt="">
+								<p>暂无管理员登录~</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="../js/jquery.js"></script>
+<script src="../layui/layui.all.js"></script>
+<script type="text/javascript">
+	var $ = layui.jquery
+	var _htmlpwd = $('.htmlpwd').html()
+	function changepwd() {
+		parent.layer.open({
+			type: 1,
+			title: '',
+			closeBtn : 2,
+			skin: 'dialog_class',
+			area: ['520px','auto'],
+			btn: ['取消','确认修改'],
+			btn1: function(index,layero) {//点击取消按钮
+				parent.layer.close(index);
+			},
+			btn2: function(index,layero) {//点击保存按钮
+				$('.error_wrap_1').show()
+				return false
+			},
+			content: _htmlpwd
+		});
+	}
+</script>
+</html>

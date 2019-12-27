@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="../css/main.css">
+	<script src="../js/jquery.js"></script>
+	<script src="../js/echarts.min.js"></script>
+	<script src="../js/index.js"></script>
+</head>
+<body class="iframe_body">
+	<div class="frame_content">
+		<div class="tBox_wrap clearfix">
+			<div class="tpace20">
+				<div class="twid twid40">
+					<div class="tBox tBox_1">
+						<div class="title">整体数据</div>
+						<ul class="content_ztsj clearfix">
+							<li>
+								<div>
+									<span>本月总流水(元)</span>
+									<p><i>￥</i>126,560</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<span>上架总机构数</span>
+									<p><i>￥</i>126,560</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<span>本月总退款金额(元)</span>
+									<p><i>￥</i>126,560</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<span>注册总用户数</span>
+									<p><i>￥</i>126,560</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="twid twid60">
+					<div class="tBox tBox_1">
+						<div class="title">整体业绩趋势</div>
+						<dl>
+							<dt>385 ,233</dt>
+							<dd>业绩总计</dd>
+						</dl>
+						<div id="box1" style="width:100%;height:210px;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tBox_wrap clearfix">
+			<div class="tpace20">
+				<div class="twid twid50">
+					<div class="tBox">
+						<div class="title">各部门业绩预览(今日)</div>
+						<dl>
+							<dt>385 ,233</dt>
+							<dd>业绩总计</dd>
+						</dl>
+						<div id="box2" style="width:100%;height:210px;"></div>
+					</div>
+				</div>
+				<div class="twid twid50">
+					<div class="tBox">
+						<div class="title">近30天业绩额趋势</div>
+						<dl>
+							<dt>385 ,233</dt>
+							<dd>2019年12月</dd>
+						</dl>
+						<div id="box3" style="width:100%;height:210px;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tBox_wrap clearfix">
+			<div class="tpace20">
+				<div class="twid twid50">
+					<div class="tBox">
+						<div class="title">TOP10机构名称
+							<div class="tool_1">
+								<span class="on">今日</span>
+								<span>当月</span>
+							</div>
+						</div>
+						<dl>
+							<dt>385 ,233</dt>
+							<dd>业绩总计</dd>
+						</dl>
+						<div id="box4" style="width:100%;height:210px;"></div>
+					</div>
+				</div>
+				<div class="twid twid50">
+					<div class="tBox">
+						<div class="title">各部门日客单价趋势
+							<div class="tool_2">
+								<div class="b1">推广部</div>
+								<div class="b2">
+									<div class="b2_1">
+										<ul>
+											<li class="has_ul">
+												<span>推广部</span>
+												<ul>
+													<li><span>推广部</span></li>
+													<li><span>推广部</span></li>
+													<li><span>推广部</span></li>
+												</ul>
+											</li>
+											<li><span>推广部</span></li>
+											<li><span>推广部推广部推广部</span></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<dl>
+							<dt>385 ,233</dt>
+							<dd>平均客单价</dd>
+						</dl>
+						<div id="box5" style="width:100%;height:210px;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tBox_wrap clearfix">
+			<div class="tpace20">
+				<div class="twid twid50">
+					<div class="tBox">
+						<div class="title">本月活跃机构预览</div>
+						<dl>
+							<dt>2 ,640</dt>
+							<dd>机构总计</dd>
+						</dl>
+						<div class="tab_wrap tab_wrap_hover" style="box-shadow: none;">
+							<ul class="hd">
+								<li>机构</li>
+								<li>交易流水</li>
+								<li>订单量</li>
+							</ul>
+							<ul class="bd">
+								<li>
+									<span>北京协和医院体检中心北京协和医院体检中心北京协和医院体检中心</span>
+									<span>3,662,054</span>
+									<span>3,662,054</span>
+								</li>
+								<li>
+									<span>北京协和医院体检中心北京协和医院体检中心北京协和医院体检中心</span>
+									<span>3,662,054</span>
+									<span>3,662,054</span>
+								</li>
+								<li>
+									<span>北京协和医院体检中心北京协和医院体检中心北京协和医院体检中心</span>
+									<span>3,662,054</span>
+									<span>3,662,054</span>
+								</li>
+								<li>
+									<span>北京协和医院体检中心北京协和医院体检中心北京协和医院体检中心</span>
+									<span>3,662,054</span>
+									<span>3,662,054</span>
+								</li>
+								<li>
+									<span>北京协和医院体检中心北京协和医院体检中心北京协和医院体检中心</span>
+									<span>3,662,054</span>
+									<span>3,662,054</span>
+								</li>
+								<li>
+									<span>北京协和医院体检中心北京协和医院体检中心北京协和医院体检中心</span>
+									<span>3,662,054</span>
+									<span>3,662,054</span>
+								</li><li>
+									<span>北京协和医院体检中心北京协和医院体检中心北京协和医院体检中心</span>
+									<span>3,662,054</span>
+									<span>3,662,054</span>
+								</li>
+								<li>
+									<span>北京协和医院体检中心北京协和医院体检中心北京协和医院体检中心</span>
+									<span>3,662,054</span>
+									<span>3,662,054</span>
+								</li>
+								<li>
+									<span>北京协和医院体检中心北京协和医院体检中心北京协和医院体检中心</span>
+									<span>3,662,054</span>
+									<span>3,662,054</span>
+								</li>
+								<li>
+									<span>北京协和医院体检中心北京协和医院体检中心北京协和医院体检中心</span>
+									<span>3,662,054</span>
+									<span>3,662,054</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="twid twid50">
+					<div class="tBox">
+						<div class="title">本月城市订单量TOP50</div>
+						<dl>
+							<dt>2 ,640</dt>
+							<dd>订单量总计</dd>
+						</dl>
+						<div class="tab_wrap tab_wrap2 tab_wrap_hover" style="box-shadow: none;">
+							<ul class="hd">
+								<li>城市</li>
+								<li>支付订单量</li>
+							</ul>
+							<ul class="bd">
+								<li>
+									<span>浙江</span>
+									<span>3,662,054</span>
+								</li>
+								<li>
+									<span>浙江</span>
+									<span>3,662,054</span>
+								</li>
+								<li>
+									<span>浙江</span>
+									<span>3,662,054</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	var myChart1 = echarts.init(document.getElementById('box1'));
+	var option1 = {
+		title: {
+			text: ''
+		},
+		legend: {
+			show:false,
+		},
+		grid: {
+			x:0,
+			y:20,
+			x2:0,
+			y2:0,
+			containLabel: true
+		},
+		tooltip: {
+			show: true,
+			formatter: function(params) {
+				return params.seriesName+params.name + '<br>' + '<span style="color: #2950af">业绩金额 '+params.value+'</span>'
+			},
+			extraCssText:'margin-top:10px;font-size: 14px;padding:10px 20px;color: #999999;background-color: #ffffff;box-shadow: 4px 6px 29px 0px #ced1e1;border-radius: 6px;opacity: 0.9;',
+		},
+		xAxis: {
+			axisTick: {
+				alignWithLabel: true
+			},
+			axisLabel: {
+				textStyle: {
+					color: '#333'
+				}
+			},
+			axisLine: {
+				show: true, // X轴 网格线 颜色类型的修改
+				lineStyle: {
+					color: '#d9d9d9'
+				}
+			},
+			data: ["01月", "02月", "03月", "04月", "05月", "06月", "07月", "08月", "09月", "10月", "11月", "12月"]
+		},
+		yAxis: {
+			axisLine: {
+				show: false
+			},
+			axisTick: {
+				show: false
+			},
+			axisLabel: {
+				textStyle: {
+					color: '#333'
+				}
+			},
+			splitLine: {
+				show: true,
+				lineStyle: {
+					type: 'dashed',
+					color: '#d9d9d9'
+				}
+			}
+		},
+		series: [{
+			name: '2019年',
+			type: 'bar',
+			itemStyle: {
+				normal: {
+					color: '#2950af'
+				},
+				emphasis: {
+					color: '#5981e1'
+				}
+			},
+			barWidth: 18,
+			data: [115, 1120, 316, 1110, 110, 210, 210, 316, 110, 101, 120, 6000]
+		}]
+	};
+	var myChart2 = echarts.init(document.getElementById('box2'));
+	var option2 = {
+		title: {
+			text: ''
+		},
+		grid: {
+			x:0,
+			y:20,
+			x2:10,
+			y2:0,
+			containLabel: true
+		},
+		tooltip: {
+			show: true,
+			formatter: function(params) {
+				var _html = "<dl class='abc'>"+
+					"<dd><span>天猫</span><i>988,478</i></dd><dd><span>天猫</span><i>988,478</i></dd><dd><span>天猫</span><i>988,478</i></dd>"
+				"</dl>"
+				return '<div class="inner_1"><label>'+params.name + '</label><span style="color: #f9cf15;float:right;">'+params.value+'</span>'+_html+'</div>'
+			},
+			//extraCssText:'width: 150px;font-size: 14px;padding:10px 20px;color: #666666;background-color: #ffffff;box-shadow: 4px 6px 29px 0px #ced1e1;border-radius: 6px;opacity: 0.9;',
+			extraCssText: 'border: 0;background: none;padding: 0;'
+		},
+		legend: {
+			data: ''
+		},
+		xAxis: {
+			axisLabel: {
+				textStyle: {
+					color: '#333'
+				}
+			},
+			axisTick: {
+				show: false
+			},
+			axisLine: {
+				show: true, // X轴 网格线 颜色类型的修改
+				lineStyle: {
+					color: '#d9d9d9'
+				}
+			},
+			splitLine: {
+				show: false,
+			},
+		},
+		yAxis: {
+			axisLine: {
+				show: true,
+				lineStyle: {
+					color: '#d9d9d9'
+				}
+			},
+			axisTick: {
+				show: false
+			},
+			axisLabel: {
+				textStyle: {
+					color: '#333'
+				}
+			},
+			splitLine: {
+				show: false,
+			},
+			data: ['第三方渠道', '康康在线', '公众号', '推广部', '第三方平台']
+		},
+		series: [{
+			name: '',
+			type: 'bar',
+			itemStyle: {
+				normal: {
+					color: '#f9cf15'
+				},
+				emphasis: {
+					color: '#ffe366'
+				}
+			},
+			barWidth: 18,
+			data: [0, 1, 6, 15, 40]
+		}]
+	}
+	var myChart3 = echarts.init(document.getElementById('box3'));
+	var data2 = [
+		["2000-06-05", 116],
+		["2000-06-06", 129],
+		["2000-06-07", 135],
+		["2000-06-08", 86],
+		["2000-06-09", 73],
+		["2000-06-10", 85],
+		["2000-06-11", 73],
+		["2000-06-12", 68],
+		["2000-06-13", 92],
+		["2000-06-14", 130],
+		["2000-06-15", 245],
+		["2000-06-16", 139],
+		["2000-06-17", 115],
+		["2000-06-18", 111],
+		["2000-06-19", 309],
+		["2000-06-20", 206],
+		["2000-06-21", 137],
+		["2000-06-22", 128],
+		["2000-06-23", 85],
+		["2000-06-24", 94],
+		["2000-06-25", 71],
+		["2000-06-26", 106],
+		["2000-06-27", 84],
+		["2000-06-28", 93],
+		["2000-06-29", 85],
+		["2000-06-30", 73],
+		["2000-07-01", 83],
+		["2000-07-02", 125],
+		["2000-07-03", 107],
+		["2000-07-04", 82],
+		["2000-07-05", 44],
+		["2000-07-06", 72],
+		["2000-07-07", 106],
+		["2000-07-08", 107],
+		["2000-07-09", 66],
+		["2000-07-10", 91],
+		["2000-07-11", 92],
+		["2000-07-12", 113],
+		["2000-07-13", 107],
+		["2000-07-14", 131],
+		["2000-07-15", 111],
+		["2000-07-16", 64],
+		["2000-07-17", 69],
+		["2000-07-18", 88],
+		["2000-07-19", 77],
+		["2000-07-20", 83],
+		["2000-07-21", 111],
+		["2000-07-22", 57],
+		["2000-07-23", 55],
+		["2000-07-24", 60]
+	];
+	var dateList2 = data2.map(function(item) {
+		return item[0];
+	});
+	var valueList2 = data2.map(function(item) {
+		return item[1];
+	});
+	var option3 = {
+		tooltip: {
+			trigger: 'axis',
+			formatter: function(params) {
+				return params[0].axisValue + '<br>' + '<span style="color: #ff7c47">业绩金额 '+params[0].data+'</span>'
+			},
+			extraCssText:'margin-top:10px;font-size: 14px;padding:10px 20px;color: #999999;background-color: #ffffff;box-shadow: 4px 6px 29px 0px #ced1e1;border-radius: 6px;opacity: 0.9;',		
+		},
+		grid: {
+			x:0,
+			y:20,
+			x2:22,
+			y2:0,
+			containLabel: true
+		},
+		visualMap: [{
+			show: false,
+			type: 'continuous',
+			seriesIndex: 0,
+			min: 0,
+			max: 400,
+			color: ['#ff5a23','#ffc42a'],
+		}],
+		xAxis: {
+			type: 'category',
+			data: dateList2,
+			axisTick: {
+				alignWithLabel: true
+			},
+			axisLabel: {
+				textStyle: {
+					color: '#333'
+				},
+				interval: 15,
+			},
+			axisLine: {
+				show: true, // X轴 网格线 颜色类型的修改
+				lineStyle: {
+					color: '#d9d9d9'
+				}
+			},
+			//data: ['2019年10月1日', '2019年10月15日', '2019年10月30日']
+		},
+		yAxis: {
+			axisLine: {
+				show: true,
+				lineStyle: {
+					color: '#d9d9d9'
+				}
+			},
+			axisTick: {
+				show: false
+			},
+			axisLabel: {
+				textStyle: {
+					color: '#333'
+				}
+			},
+			splitLine: {
+				show: false,
+			}
+		},
+		series: [{
+			data: valueList2,
+			type: 'line',
+			smooth: true,
+			showSymbol: false,
+		}]
+	}
+	var myChart4 = echarts.init(document.getElementById('box4'));
+	var option4 = {
+		title: {
+			text: ''
+		},
+		tooltip: {
+			show: true,
+			formatter: function(params) {
+				return params.seriesName+params.name + '<br>' + '<span style="color: #39c1cf">业绩金额 '+params.value+'</span>'
+			},
+			extraCssText:'margin-top:10px;font-size: 14px;padding:10px 20px;color: #999999;background-color: #ffffff;box-shadow: 4px 6px 29px 0px #ced1e1;border-radius: 6px;opacity: 0.9;',
+		},
+		legend: {
+			data: ''
+		},
+		grid: {
+			x:0,
+			y:20,
+			x2:22,
+			y2:0,
+			containLabel: true
+		},
+		xAxis: {
+			axisTick: {
+				alignWithLabel: true
+			},
+			axisLabel: {
+				textStyle: {
+					color: '#333'
+				},
+				formatter: function(value) {
+					var res = value;
+					if (res.length > 5) {
+						res = res.substring(0, 5) + "..";
+					}
+					return res;
+				},
+				interval: 0,
+				rotate: 50
+			},
+			axisLine: {
+				show: true, // X轴 网格线 颜色类型的修改
+				lineStyle: {
+					color: '#d9d9d9'
+				}
+			},
+			data: [
+				"医院吗什么干嘛是美国没事干嘛", 
+				"医院吗什么干嘛是美国没事干嘛", 
+				"医院吗什么干嘛是美国没事干嘛", 
+				"医院吗什么干嘛是美国没事干嘛",
+				"医院吗什么干嘛是美国没事干嘛", 
+				"医院吗什么干嘛是美国没事干嘛", 
+				"医院吗什么干嘛是美国没事干嘛", 
+				"医院吗什么干嘛是美国没事干嘛",
+				"医院吗什么干嘛是美国没事干嘛", 
+				"医院吗什么干嘛是美国没事干嘛",
+			]
+		},
+		yAxis: {
+			axisLine: {
+				show: false
+			},
+			axisTick: {
+				show: false
+			},
+			axisLabel: {
+				textStyle: {
+					color: '#333'
+				}
+			},
+			splitLine: {
+				show: true,
+				lineStyle: {
+					type: 'dashed',
+					color: '#d9d9d9'
+				}
+			}
+		},
+		series: [{
+			name: '',
+			type: 'bar',
+			itemStyle: {
+				normal: {
+					color: '#25c2d2'
+				},
+				emphasis: {
+					color: '#72f1ff'
+				}
+			},
+			barWidth: 18,
+			data: [100, 500, 105, 400,100, 500, 105, 400,10,60]
+		}]
+	}
+	var myChart5 = echarts.init(document.getElementById('box5'));
+	var data5 = [
+		["2000-06-05", 116],
+		["2000-06-06", 129],
+		["2000-06-07", 135],
+		["2000-06-08", 86],
+		["2000-06-09", 73],
+		["2000-06-10", 85],
+		["2000-06-11", 73],
+		["2000-06-12", 68],
+		["2000-06-13", 92],
+		["2000-06-14", 130],
+		["2000-06-15", 245],
+		["2000-06-16", 139],
+		["2000-06-17", 115],
+		["2000-06-18", 111],
+		["2000-06-19", 309],
+		["2000-06-20", 206],
+		["2000-06-21", 137],
+		["2000-06-22", 128],
+		["2000-06-23", 85],
+		["2000-06-24", 94],
+		["2000-06-25", 71],
+		["2000-06-26", 106],
+		["2000-06-27", 84],
+		["2000-06-28", 93],
+		["2000-06-29", 85],
+		["2000-06-30", 73],
+		["2000-07-01", 83],
+		["2000-07-02", 125],
+		["2000-07-03", 107],
+		["2000-07-04", 82],
+		["2000-07-05", 44],
+		["2000-07-06", 72],
+		["2000-07-07", 106],
+		["2000-07-08", 107],
+		["2000-07-09", 66],
+		["2000-07-10", 91],
+		["2000-07-11", 92],
+		["2000-07-12", 113],
+		["2000-07-13", 107],
+		["2000-07-14", 131],
+		["2000-07-15", 111],
+		["2000-07-16", 64],
+		["2000-07-17", 69],
+		["2000-07-18", 88],
+		["2000-07-19", 77],
+		["2000-07-20", 83],
+		["2000-07-21", 111],
+		["2000-07-22", 57],
+		["2000-07-23", 55],
+		["2000-07-24", 60]
+	];
+	var dateList5 = data5.map(function(item) {
+		return item[0];
+	});
+	var valueList5 = data5.map(function(item) {
+		return item[1];
+	});
+	var option5 = {
+		tooltip: {
+			trigger: 'axis',
+			formatter: function(params) {
+				return params[0].axisValue + '<br>' + '<span style="color: #ff4881">业绩金额 '+params[0].data+'</span>'
+			},
+			extraCssText:'margin-top:10px;font-size: 14px;padding:10px 20px;color: #999999;background-color: #ffffff;box-shadow: 4px 6px 29px 0px #ced1e1;border-radius: 6px;opacity: 0.9;',		
+		},
+		//color: ['#ff6836','#ff3bdd'],
+		grid: {
+			x:0,
+			y:20,
+			x2:22,
+			y2:0,
+			containLabel: true
+		},
+		visualMap: [{
+			show: false,
+			type: 'continuous',
+			seriesIndex: 0,
+			min: 0,
+			max: 400,
+			color: ['#ff6836','#ff3bdd'],
+		}],
+		xAxis: {
+			type: 'category',
+			data: dateList5,
+			axisTick: {
+				alignWithLabel: true
+			},
+			axisLabel: {
+				textStyle: {
+					color: '#333'
+				},
+				interval: 15,
+			},
+			axisLine: {
+				show: true, // X轴 网格线 颜色类型的修改
+				lineStyle: {
+					color: '#d9d9d9'
+				}
+			},
+			//data: ['2019年10月1日', '2019年10月15日', '2019年10月30日']
+		},
+		yAxis: {
+			axisLine: {
+				show: true,
+				lineStyle: {
+					color: '#d9d9d9'
+				}
+			},
+			axisTick: {
+				show: false
+			},
+			axisLabel: {
+				textStyle: {
+					color: '#333'
+				}
+			},
+			splitLine: {
+				show: false,
+			}
+		},
+		series: [{
+			data: valueList5,
+			type: 'line',
+			smooth: true,
+			showSymbol: false,
+			itemStyle: {
+				normal:{
+					lineStyle:{
+						//color:'#ff4881'
+					}
+				},
+			}		
+		}]
+	}
+	myChart5.setOption(option5);
+	myChart4.setOption(option4);
+	myChart3.setOption(option3);
+	myChart2.setOption(option2);
+	myChart1.setOption(option1);
+	setTimeout(function() {
+		myChart1.resize();
+		myChart2.resize();
+		myChart3.resize();
+		myChart4.resize();
+		myChart5.resize();
+	},50)
+	$(window).resize(function() {
+		myChart1.resize();
+		myChart2.resize();
+		myChart3.resize();
+		myChart4.resize();
+		myChart5.resize();
+	})
+</script>
+</html>

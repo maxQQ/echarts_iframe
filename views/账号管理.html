@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../layui/css/layui.css">
+	<link rel="stylesheet" href="../css/main.css">
+</head>
+<div class="htmlwrap htmladd">
+	<div class="dislog_wrap layui-form" id="content_add">
+		<div class="dialog_edit_1">
+			<h3>添加账号</h3>
+			<div class="edit_form" style="height: 420px;">
+				<div class="error_wrap_1">
+					<p>您输入的手机号有误</p>
+				</div>
+				<div class="form_line" style="padding-top: 30px;">
+					<label><span>*</span>账号：</label>
+					<div class="input_box">
+						<input type="text" placeholder="请输入">
+					</div>
+				</div>
+				<div class="form_line">
+					<label><span>*</span>手机号码：</label>
+					<div class="input_box">
+						<input type="text" placeholder="请输入">
+					</div>
+				</div>
+				<div class="form_line">
+					<label><span>*</span>角色：</label>
+					<div class="input_box">
+						<select name="" id="">
+							<option value="请选择">请选择</option>
+							<option value="角色1">角色1</option>
+							<option value="角色2">角色2</option>
+						</select> 
+					</div>
+				</div>
+				<div class="form_line">
+					<label><span>*</span>姓名：</label>
+					<div class="input_box">
+						<input type="text" placeholder="请输入">
+					</div>
+				</div>
+				<div class="form_line">
+					<label>备注：</label>
+					<div class="input_box">
+						<textarea rows="" cols="" placeholder="请输入"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="htmlwrap htmledit">
+	<div class="dislog_wrap layui-form" id="content_edit">
+		<div class="dialog_edit_1">
+			<h3>编辑</h3>
+			<div class="edit_form" style="height: 420px;">
+				<div class="error_wrap_1">
+					<p>您输入的手机号有误</p>
+				</div>
+				<div class="form_line" style="padding-top: 30px;">
+					<label><span>*</span>账号：</label>
+					<div class="input_box">
+						<input type="text" placeholder="请输入">
+					</div>
+				</div>
+				<div class="form_line">
+					<label><span>*</span>手机号码：</label>
+					<div class="input_box">
+						<input type="text" placeholder="请输入">
+					</div>
+				</div>
+				<div class="form_line">
+					<label><span>*</span>角色：</label>
+					<div class="input_box">
+						<select name="" id="">
+							<option value="请选择">请选择</option>
+							<option value="角色1">角色1</option>
+							<option value="角色2">角色2</option>
+						</select> 
+					</div>
+				</div>
+				<div class="form_line">
+					<label><span>*</span>姓名：</label>
+					<div class="input_box">
+						<input type="text" placeholder="请输入">
+					</div>
+				</div>
+				<div class="form_line">
+					<label>备注：</label>
+					<div class="input_box">
+						<textarea rows="" cols="" placeholder="请输入"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="htmlwrap htmldelete">
+	<div class="dislog_wrap layui-form" id="content_delete">
+		<div class="dialog_delet_1">
+			<h3>操作提示</h3>
+			<p>你确定要删除该账号？</p>
+		</div>
+	</div>
+</div>
+<body class="iframe_body">
+	<div class="frame_content">
+		<div class="layui-form">
+			<div class="topbar_group_1">
+				<div class="b1">
+					<div class="bar_inline_1">
+						<label>管理员名称：</label>
+						<input type="text" placeholder="请输入">
+					</div>
+					<div class="bar_inline_1 bar_inline_last">
+						<label>选择日期：</label>
+						<input type="text" placeholder="请选择日期" class="time_input_1" id="test2" autocomplete="off">
+					</div>
+					<span class="search_btn_1">搜索</span>
+				</div>
+				<div class="b1">
+					<span href="javascript:;" class="add_btn_2" onclick="add()">添加账号</span>
+				</div>
+			</div>
+			<div class="tab_wrap tab_wrap_com tab_wrap_8">
+				<div class="hd">
+					<ul>
+						<li>ID</li>
+						<li>登录账号</li>
+						<li>手机</li>
+						<li>角色</li>
+						<li>姓名</li>
+						<li>创建时间</li>
+						<li>状态</li>
+						<li>操作</li>
+					</ul>
+				</div>
+				<div class="bd">
+					<ul>
+						<li>
+							<span>1</span>
+							<span>ADMIN4568</span>
+							<span>18946001000</span>
+							<span>运营专员01</span>
+							<span>上官莎莎</span>
+							<span>2019-12-24  12:01</span>
+							<span>
+								<em class="status_1">已启用</em>
+							</span>
+							<span>
+								<div class="table_cz_wrap">
+									<em class="table_cz" onclick="changeStatus(this)">停用</em>|
+									<em class="table_cz" onclick="delete1()">删除</em>|
+									<em class="table_cz" onclick="edit()">编辑</em>|
+									<em class="table_cz" onclick="restpwd()">密码重置</em>
+								</div>
+							</span>
+						</li>
+						<li>
+							<span>1</span>
+							<span>ADMIN4568</span>
+							<span>18946001000</span>
+							<span>运营专员01</span>
+							<span>上官莎莎</span>
+							<span>2019-12-24  12:01</span>
+							<span>
+								<em class="status_1 status_2">已停用</em>
+							</span>
+							<span>
+								<div class="table_cz_wrap">
+									<em class="table_cz">停用</em>|
+									<em class="table_cz">删除</em>|
+									<em class="table_cz">编辑</em>|
+									<em class="table_cz">密码重置</em>
+								</div>
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="page_1">
+				<a href="" class="prev"></a>
+				<a href="">1</a>
+				<a href="" class="active">2</a>
+				<a href="">3</a>
+				<a href="" class="next"></a>
+				<div class="page_bar">
+					<div class="hd">10条每页</div>
+					<ul class="bd">
+						<li>5条</li>
+						<li class="on">10条</li>
+						<li>20条</li>
+						<li>50条</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="../js/jquery.js"></script>
+<script src="../layui/layui.all.js"></script>
+<script>
+	var $ = layui.jquery
+	var laydate = layui.laydate;
+	var form = layui.form;
+	var _htmladd = $('.htmladd').html();
+	var _htmledit = $('.htmledit').html();
+	var _htmldelete = $('.htmldelete').html()
+	laydate.render({
+		elem: '#test2',
+	});
+	function add() {
+		parent.layer.open({
+			type: 1,
+			title: '',
+			closeBtn : 2,
+			skin: 'dialog_class',
+			area: ['640px','auto'],
+			btn: ['取消','保存'],
+			btn1: function(index,layero) {//点击取消按钮
+				layer.close(index);
+			},
+			btn2: function(index,layero) {//点击保存按钮
+				$('.error_wrap_1').show()
+				return false
+			},
+			content: _htmladd,
+			success: function(layero,index) {
+				parent.form.render();
+			}
+		});
+	}
+	function edit() {
+		parent.layer.open({
+			type: 1,
+			title: '',
+			closeBtn : 2,
+			skin: 'dialog_class',
+			area: ['640px','auto'],
+			btn: ['取消','保存'],
+			btn1: function(index,layero) {//点击取消按钮
+				layer.close(index);
+			},
+			btn2: function(index,layero) {//点击保存按钮
+				$('.error_wrap_1').show()
+				return false
+			},
+			content: _htmledit,
+			success: function(layero,index) {
+				parent.form.render();
+			}
+		});
+	}
+	function delete1() {
+		parent.layer.open({
+			type: 1,
+			title: '',
+			closeBtn : 0,
+			skin: 'dialog_class',
+			area: ['416px','auto'],
+			btn: ['取消','继续'],
+			btn1: function(index,layero) {//点击取消按钮
+				layer.close(index);
+			},
+			btn2: function(index,layero) {//点击保存按钮
+				
+			},
+			content: _htmldelete
+		});
+	}
+	function changeStatus(that) {
+		var _em = $(that).closest('span').prev().find('em')
+		if($(that).text()=='停用') {
+			layer.msg('已停用！',{
+				icon: 2,
+				time: 1500,
+				shade: '0',
+				skin: 'msg_class'
+			},function() {
+				$(that).text('启用')
+				_em.addClass('status_2')
+				_em.text('已停用')
+			})
+		}else {
+			layer.msg('已启用！',{
+				icon: 1,
+				time: 1500,
+				shade: '0',
+				skin: 'msg_class'
+			},function() {
+				$(that).text('停用')
+				_em.removeClass('status_2')
+				_em.text('已启用')
+			})
+		}
+	}
+	function restpwd() {
+		if(false) {
+			layer.msg('密码重置成功！',{
+				icon: 1,
+				shade: '0',
+				skin: 'msg_class'
+			})
+		}else {
+			layer.msg('密码重置失败！',{
+				icon: 3,
+				shade: '0',
+				skin: 'msg_class'
+			})
+		}
+	}
+</script>
+</html>
